@@ -1,0 +1,28 @@
+.itemcount-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.itemcount-btn{
+    margin: 0 15px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 50%;
+    /* width: 25px;
+    /* border-radius: 50%; 
+    font-size: 25px;
+    font-weight: bold;  */
+}
+
+.itemcount-btn:hover{
+    background-color: rgb(94, 105, 102);
+    color: #fff;
+}
+.itemcount-contador{
+    font-size: 20px;
+    /* width: 30px;
+    font-size: 20px;    */
+}

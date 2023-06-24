@@ -1,0 +1,17 @@
+.err_container{
+   
+    display: flex;
+    
+    justify-content: center;
+    
+ }
+ .err_tex{
+     font-size: 20px;
+     margin-top: 50px;
+     
+     
+ }
+ 
+ .err_img{
+ width: 500px;
+ }

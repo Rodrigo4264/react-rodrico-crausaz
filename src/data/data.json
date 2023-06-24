@@ -1,0 +1,314 @@
+[ 
+    {
+      "id": 1,
+      "category": "receta",
+      "brand": "Mormaii",
+      "name": "Leña",
+      "price": 26200,
+      "stock": 25,
+      "material":"marco y patillas de acetato",
+      "description":"ancho: 136mm alto: 41mm diametro lente: 53mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/9df78eab33525d08d6e5fb8d27136e95/m/o/mo_lasle_as_col20_fre.jpg"
+    },
+    {
+      "id": 2,
+      "category": "receta",
+      "brand": "Mormaii",
+      "name": "Traful",
+      "price": 24200,
+      "stock": 25,
+      "material":"marco y patillas de acetato",
+      "description":"ancho: 134mm alto: 44mm diametro lente: 48mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/9df78eab33525d08d6e5fb8d27136e95/t/r/traful_01.jpg"
+    },
+    {
+      "id": 3,
+      "category": "receta",
+      "brand": "Mormaii",
+      "name": "Suva",
+      "price": 20200,
+      "stock": 25,
+      "material":"marco y patillas de acetato",
+      "description":"ancho: 137mm alto: 39mm diametro lente: 58mm",
+      "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/573/159/products/anteojo-mormaii-suva-perfil1-e9bdca03feb54acee316332224162697-240-0.jpg"
+    },
+    {
+      "id": 4,
+      "category": "receta",
+      "brand": "Mormaii",
+      "name": "Salem",
+      "price": 30200,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://cdn.shopify.com/s/files/1/0275/9049/2259/products/oculos-de-grau-mormaii-salem-preto-e-vermelho-fosco-lente-5-5-cm_2_1211f3ae-9744-4540-8953-b5abb3be1490_1200x1200.jpg?v=1603996970"
+    },
+    {
+     
+      "id": 5,
+      "category": "receta",
+      "brand": "360",
+      "name": "Bublle 3",
+      "price": 30200,
+      "stock": 25,
+      "material":"marco y patilla de acetato",
+      "description":"ancho: 134mm alto: 48mm diametro lente: 49mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/3/6/360_bubble_col03_rx_lateral-min.jpg"
+    },
+    {
+      "id": 6,
+      "category": "receta",
+      "brand": "360",
+      "name": "Metro B",
+      "price": 19800,
+      "stock": 25,
+      "material":"marco y patilla de acetato",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/m/e/metro_b_2_1.jpg"
+    },
+    {
+      "id": 7,
+      "category": "receta",
+      "brand": "360",
+      "name": "Tikki",
+      "price": 22520,
+      "stock": 25,
+      "material":"marco y patilla de acetato",
+      "description":"ancho: 140mm alto: 48mm diametro lente: 52mm",
+      "img": "https://opticamartinez.com.ar/wp-content/uploads/2020/07/aloo-tikki.jpg"
+    },
+    {
+      "id": 8,
+      "category": "receta",
+      "brand": "360",
+      "name": "GIG",
+      "price": 17200,
+      "stock": 25,
+      "material":"marco de acetato",
+      "description":"ancho: 164mm alto: 40mm diametro lente: 47mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/g/i/gig_1_427_324.jpg"
+    },
+    {
+      "id": 9,
+      "category": "receta",
+      "brand": "Ay not dead",
+      "name": "Nina",
+      "price": 30200,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/911/967/products/nina1-c94488153014133fba16283440167866-640-0.png"
+    },
+    {
+      "id": 10,
+      "category": "receta",
+      "brand": "Ay not dead",
+      "name": "Vesuvio",
+      "price": 31200,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://d2r9epyceweg5n.cloudfront.net/stores/001/774/922/products/ay647-275-531-53f755ed5c3024058e16294869878272-640-0.jpg"
+    },
+
+    {
+      "id": 11,
+      "category": "receta",
+      "brand": "Ay not dead",
+      "name": "Nate",
+      "price": 40200,
+      "stock": 25,
+      "material":"marco y patilla de acetato",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://d28hi93gr697ol.cloudfront.net/6717fb9d-1896-470a-efe3-5fb543712af0/img/Producto/6816e922-646d-5a98-b7fc-a0b1d5a2bde2/NATE1-62f453aaa9e8d.webp"
+    },
+    {
+      "id": 12,
+      "category": "receta",
+      "brand": "Ay not dead",
+      "name": "White",
+      "price": 45600,
+      "stock": 25,
+      "material":"marco y patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://d2r9epyceweg5n.cloudfront.net/stores/001/626/181/products/page-black-marron1-d135130ecd2fe5213b16247161152661-640-0.jpeg"
+    },
+    {
+      "id": 13,
+      "category": "sol",
+      "brand": "Vogue",
+      "name": "El dorado",
+      "price": 54123,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/4/0/4002_996_13_55_lado.jpg"
+    },
+    {
+      "id": 14,
+      "category": "sol",
+      "brand": "Vogue",
+      "name": "Dore",
+      "price": 71200,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/4/2/4227s_0vo4227s__280_13.jpg"
+    },
+    {
+      "id": 15,
+      "category": "sol",
+      "brand": "Vogue",
+      "name": "Noire",
+      "price": 50200,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/5/4/5408_negro_w44_11_49.jpg"
+    },
+    {
+      "id": 16,
+      "category": "sol",
+      "brand": "Vogue",
+      "name": "Shadow",
+      "price": 37200,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/5/4/5429-s-299211-140-right-1.jpg"
+    },
+    {
+      "id": 17,
+      "category": "sol",
+      "brand": "Rusty",
+      "name": "And now",
+      "price": 29200,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/a/n/xand-now-sblk-s10-pol.jpg.pagespeed.ic.bGxqbKPI1H.webp"
+    },
+    {
+      "id": 18,
+      "category": "sol",
+      "brand": "Rusty",
+      "name": "Polar",
+      "price": 46200,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/p/l/play_negro_brillo.jpg"
+    },
+    {
+      "id": 19,
+      "category": "sol",
+      "brand": "Rusty",
+      "name": "Show",
+      "price": 37400,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/t/v/tvshowazul.jpg"
+    },
+    {
+      "id": 20,
+      "category": "sol",
+      "brand": "Rusty",
+      "name": "Teal",
+      "price": 34200,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/t/e/xtealc3.jpg.pagespeed.ic.ocYf4nM1eP.webp"
+    },
+
+    {
+      "id": 21,
+      "category": "sol",
+      "brand": "Oakley",
+      "name": "Surto",
+      "price": 48500,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/9/4/9406_337.jpg"
+    },
+    {
+      "id": 22,
+      "category": "sol",
+      "brand": "Oakley",
+      "name": "Jade",
+      "price": 30200,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/g/a/gafa-de-sol-oakley-jawbreaker-oo9290-36.jpg"
+    },
+    {
+      "id": 23,
+      "category": "sol",
+      "brand": "Oakley",
+      "name": "Prizm",
+      "price": 40200,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/9/4/9416-30.jpg"
+    },
+    {
+      "id": 24,
+      "category": "sol",
+      "brand": "Oakley",
+      "name": "Ruby",
+      "price": 30200,
+      "stock": 25,
+      "material":"marco de acetato, patilla de metal",
+      "description":"ancho: 144mm alto: 45mm diametro lente: 57mm",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/9/1/9102_f1_prizm_ruby_polarizado.jpeg"
+    },
+    {
+      "id": 25,
+      "category": "contacto",
+      "brand": "Acuvue",
+      "name": "OASYS",
+      "price": 11200,
+      "stock": 25,
+      "material":"Fabricados con senofilcon A, un material de hidrogel de silicona",
+      "description":" ACUVUE OASYS gracias a su nuevo material, aportan todas estas ventajas: La sensación de no llevar lentes de contacto (ocho de cada 10 usuarios se olvidan realmente de que los llevan puestos) Comodidad excepcional al mirar televisión o trabajar con el computador Comodidad excepcional en ambientes secos como lugares con calefacción o aire acondicionado Alivio para los ojos cansados y secos al llevar los lentes de contacto Mayor transmisibilidad de oxígeno para que tus ojos se vean más sanos ",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/a/c/xacuvue_oasys_2.jpg.pagespeed.ic.7Io8Sv1jVe.webp"
+    },
+    {
+      "id": 26,
+      "category": "contacto",
+      "brand": "Acuvue",
+      "name": "VITA",
+      "price": 13600,
+      "stock": 25,
+      "material":"Fabricados con senofilcon A, un material de hidrogel de silicona",
+      "description":"Este diseño inspirado en el ojo humano ayuda a: Maximizar y mantener la hidratación del lente durante todo el mes mejorar el confort a través del diseño Infinity Edge™, un perfil de borde estrecho, suave y con altura mínima. Proporcionar protección UV mediante el bloqueo de aproximadamente el 93,4% de los rayos UVA y el 99,8% de los rayos UVB",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/a/c/acuvue-vita-6-pack.jpg"
+    },
+    {
+      "id": 27,
+      "category": "contacto",
+      "brand": "Alcon",
+      "name": "Air optix",
+      "price": 16200,
+      "stock": 25,
+      "material":"Hidrogel max",
+      "description":"Tienen una tecnología superficial, ultra suave único que crea una capa protectora de la humedad que resiste depósitos mejor que otras lentes .",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/a/i/air_optix.jpg"
+    },
+    {
+      "id": 28,
+      "category": "contacto",
+      "brand": "Coopervision",
+      "name": "Biomedics",
+      "price": 15400,
+      "stock": 25,
+      "material":"Hidro laca fix",
+      "description":"Este diseño inspirado en el ojo humano ayuda a: Maximizar y mantener la hidratación del lente durante todo el mes mejorar el confort a través del diseño Infinity Edge™, un perfil de borde estrecho, suave y con altura mínima. Proporcionar protección UV mediante el bloqueo de aproximadamente el 93,4% de los rayos UVA y el 99,8% de los rayos UVB",
+      "img": "https://www.opticapaesani.com.ar/media/catalog/product/cache/8/image/400x545/9df78eab33525d08d6e5fb8d27136e95/b/i/xbiomedics_nuevo.jpg.pagespeed.ic.w4dFBx7Tom.webp"
+    }
+]
+    
