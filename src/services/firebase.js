@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { collection, getDocs, doc , query, where} from "firebase/firestore";
+import { collection, getDocs, getDoc, doc , query, where} from "firebase/firestore";
 
 
 
@@ -17,7 +17,7 @@ const firebaseConfig = {
 const firebaseapp = initializeApp(firebaseConfig);
 const db = getFirestore(firebaseapp);
 
-console.log(db)
+//console.log(db)
 
 export async function getData(){
 const prductsCollectionRef=collection(db,"products")
@@ -26,20 +26,21 @@ const arrayDocs = productsSnapshot.docs;
 const dataDocs = arrayDocs.map(doc =>{
     return {...doc.data(), id: doc.id}
 }); 
-console.log("--->" ,dataDocs);
+return dataDocs;
 }
+
 
 export async function getItemData(idurl){ 
     const docRef = doc(db, "products", idurl);
     const docSnap = await getDoc(docRef);
-    return {id: docSnap.id, ...doc.data} 
+    return {id: docSnap.id, ...docSnap.data()} 
    
    //hacer validacion de datos
 }
 
 export async function getCategoryData(categoryfer){ 
     const productsCollectionRef = collection(db, 'products');
-const q = query(productsCollectionRef, where('produtype', '==', categoryfer));
+const q = query(productsCollectionRef, where('category', '==', categoryfer));
 const productsSnapshot = await getDocs(q);
 const arrayDocs = productsSnapshot.docs;
 const dataDocs = arrayDocs.map(doc =>{

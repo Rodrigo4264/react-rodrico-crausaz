@@ -3,6 +3,7 @@ import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
 
 const ItemDetail = ({item, onAddToCart}) => {
+  
   return (
     <div className="ItemDetail-container">
         <div className="producto-detalle">

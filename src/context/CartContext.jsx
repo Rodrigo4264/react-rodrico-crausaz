@@ -9,7 +9,12 @@ const [cart,setCart]= useState([])
 
 function addItem(item, contador){
     const newCart=[...cart]
-    newCart.push({...item,contador})
+    const existInCart = newCart.find(prod => prod.id === item.id)
+    if(existInCart){
+      existInCart.contador += contador
+    }else{
+        newCart.push({...item,contador})
+    }
     setCart(newCart)
 }
 
@@ -37,9 +42,29 @@ function removeItem(idDelete){
 setCart(cart.filter((item) => item.id!==idDelete))
 }
 
+function sustItem(idSust){
+  const newCart=[...cart]
+    const itemsust = newCart.find(prod => prod.id === idSust)
+    if(itemsust.contador>1){
+    itemsust.contador -= 1
+    }
+    setCart(newCart)
+}
+
+function sumItem(idSust){
+  const newCart=[...cart]
+    const itemsust = newCart.find(prod => prod.id === idSust)
+    if(itemsust.stock>itemsust.contador){
+    itemsust.contador += 1
+    }
+    setCart(newCart)
+}
+
+
+
 return(
     <cartContext.Provider 
-    value={ {cart,setCart, addItem, countItems, countTotalPrice, clear, removeItem} }
+    value={ {cart,setCart, addItem, countItems, countTotalPrice, clear, removeItem, sustItem, sumItem} }
     >
         {children}
     </cartContext.Provider>
