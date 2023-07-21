@@ -9,12 +9,12 @@ const ItemDetailContainer = ( ) => {
  const [errors, setErrors] = useState(null);
  const [item, setItem]= useState(null)
  const {cart, addItem} = useContext(cartContext)
- console.log(cart)
+ //console.log(cart)
 
 
 
  const id = useParams().id
-console.log(id)
+//console.log(id)
  useEffect(() => {
   getItemData(id)
     .then((respuesta) => {
@@ -33,7 +33,7 @@ if (errors)
       </div>
     );
 
-console.log(item)
+//console.log(item)
  
 function onAddToCart(contador){
   addItem(item, contador)

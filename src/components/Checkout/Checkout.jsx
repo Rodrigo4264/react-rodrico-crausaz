@@ -1,30 +1,101 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { cartContext } from '../../context/CartContext'
-
+import { createOrderWithStockUpdate } from '../../services/firebase'
+import { useNavigate } from 'react-router-dom';
 
 const Checkout = () => {
+  const navigateTo = useNavigate();
+  const {cart, countTotalPrice, clear}= useContext(cartContext)
 
-  const {cart, countTotalPrice, clear, removeItem, sustItem, sumItem}= useContext(cartContext)
+  const [buyer, setBuyer]=useState({
+    fullname:'',
+    email:'',
+    phone:'',
+    adress:''
+  })
+
+
+  const handleInputChange= (evt)=>{
+    const {name, value}= evt.target
+    setBuyer({
+      ...buyer,
+      [name]: value
+    })
+  }
+
+  const handleForm= (evt)=>{
+    evt.preventDefault();
+    handleConfirm()
+  }
+  //-------------------------------------------------------
+  async function handleConfirm() {
+    const order = {
+      items: cart,
+      comprador: buyer,
+      date: new Date(),
+      price: countTotalPrice(),
+    };
+
+    try {
+      const id = await createOrderWithStockUpdate(order);
+      //console.log("respuesta", id);
+      clear();
+
+       navigateTo(`/confirmation/${id}`);
+    } catch (error) {
+      alert(error);
+    }
+  }
+  //-------------------------------------------------------
 
   return (
     <div className='container'>
       <div className='row'>
         <div className='col-6'>
           <div className='row'>
-            <form action="">
-              <h3>Informacion del envio</h3>
-            <div className='col-12 '>
-              <input type="text" name="fullname" placeholder='Nombre completo'/>
-            </div>
-            <div className='col-12 mt-3'>
-              <input type="text" name="email" placeholder='e-mail'/>
-            </div>
-            <div className='col-12 mt-3'>
-              <input type="text" name="phone" placeholder='Telefono'/>
-            </div>
-            <div className='col-12 mt-3'>
-              <input type="text" name="adress" placeholder='direccion'/>
-            </div>
+            <form action="" onSubmit={handleForm}>
+                    <h3>Informacion del envio</h3>
+                  <div className='col-12 '>
+                    <input 
+                      type="text" 
+                      name="fullname" 
+                      value={buyer.fullname}
+                      placeholder='Nombre completo'
+                      required
+                      onChange={handleInputChange}
+                    />
+                  </div>
+                  <div className='col-12 mt-3'>
+                    <input 
+                      type="email" 
+                      name="email" 
+                      value={buyer.email}
+                      placeholder='e-mail'
+                      required
+                      onChange={handleInputChange}
+                      />
+                  </div>
+                  <div className='col-12 mt-3'>
+                    <input 
+                      type="tel"  
+                      name="phone" 
+                      value={buyer.phone}
+                      placeholder='Telefono'
+                      required
+                      onChange={handleInputChange}
+                    />
+                  </div>
+                  <div className='col-12 mt-3'>
+                    <input 
+                      type="text" 
+                      name="adress" 
+                      value={buyer.adress}
+                      placeholder='direccion'
+                      required
+                      onChange={handleInputChange}
+                    />
+                  </div>
+                  <button type='submit' className='mt-3'>Finalizar compra</button>
             </form>
           </div>
         </div>

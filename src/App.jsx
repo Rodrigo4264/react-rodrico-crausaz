@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import { CartContextProvider } from './context/CartContext';
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
+import OrderConfirm from './components/OrderConfirm/OrderConfirm';
 
 
 
@@ -30,6 +31,8 @@ function App() {
               <Route path='/:category' element={<ItemListContainer/>}/>
               <Route path='/bag' element={<Cart/>}/>
               <Route path='/checkout' element={<Checkout/>}/> 
+              <Route path="/confirmation/:orderid" element={<OrderConfirm />}
+            />
 
 
               {/* <Route  path='*' element={<PagNotFound/>}/> */}

@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { collection, getDocs, getDoc, doc , query, where} from "firebase/firestore";
+import { collection, getDocs, getDoc,addDoc, doc , query, where,writeBatch} from "firebase/firestore";
 
 
 
@@ -48,3 +48,50 @@ const dataDocs = arrayDocs.map(doc =>{
     });
     return dataDocs
 }
+//-------------------------------------------------------------------------------------
+// export async function createOrder(data) {
+//     const ordersCollectionRef = collection(db, "orders");
+  
+//     const response = await addDoc(ordersCollectionRef, data);
+//     return response.id;
+  
+    
+//   }
+
+
+export async function getOrder(idurl){ 
+    const docRef = doc(db, "orders", idurl);
+    const docSnap = await getDoc(docRef);
+    return {id: docSnap.id, ...docSnap.data()} 
+   
+   
+}
+
+
+
+  export async function createOrderWithStockUpdate(data) {
+    const ordersCollectionRef = collection(db, "orders");
+    const batch = writeBatch(db);
+    const { items } = data;
+  
+    for (let itemInCart of items) {
+      const refDoc = doc(db, "products", itemInCart.id);
+      const docSnap = await getDoc(refDoc);
+  
+      const { stock } = docSnap.data();
+      console.log(stock);
+  
+      const stockToUpdate = stock - itemInCart.contador;
+      if (stockToUpdate < 0) {
+        throw new Error(`No hay stock suficiente del producto: ${itemInCart.id}`);
+      } else {
+        const docRef = doc(db, "products", itemInCart.id);
+        batch.update(docRef, { stock: stockToUpdate });
+      }
+    }
+  
+    await batch.commit();
+    const response = await addDoc(ordersCollectionRef, data);
+  
+    return response.id;
+  }
